@@ -14,7 +14,7 @@ app.post("/todos", async (req, res) => {
   try {
     const { description } = req.body;
     const result = await pool.query(
-      "INSERT INTO todo (description) VALUES ($1) RETURNING *",
+      "INSERT INTO todo (description, created_at) VALUES ($1, CURRENT_TIMESTAMP) RETURNING *",
       [description]
     );
     res.status(201).json(result.rows[0]); // Send the created todo back with status 201

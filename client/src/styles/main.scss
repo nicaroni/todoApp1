@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$primary: #007bff;
+$secondary: #6c757d;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #fff3fb;
+  }
+  
+  .todo-editing {
+    background-color: $primary;
+    color: white;
+  }
+  
+  .todo-item {
+    &:hover {
+      background-color: $secondary;
+      color: white;
+      cursor: pointer;
+    }
+  }
