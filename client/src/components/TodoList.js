@@ -7,7 +7,7 @@ const TodoList = ({ todos, dispatch }) => {
       <table className="table table-borderless">
         <thead>
           <tr>
-            <th>Created At</th> {/* Updated the header */}
+            <th>Created At</th> 
             <th>Description</th>
             
           </tr>
